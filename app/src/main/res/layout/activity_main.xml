@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/lblCompte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="208dp"
+        android:text="@string/Comptartxt"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="160sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonComptar"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonToast"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-3dp" />
+
+    <Button
+        android:id="@+id/ButtonToast"
+        android:layout_width="407dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/toastButtontxt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints,OnClick,UsingOnClickInXml"
+        tools:layout_editor_absoluteX="1dp"
+        android:onClick="showToast"/>
+
+    <Button
+        android:id="@+id/ButtonComptar"
+        android:layout_width="410dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="4dp"
+        android:background="#B35757"
+        android:text="@string/comptarbuttontxt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="Countup"
+
+        />
+
+    <Button
+        android:id="@+id/CountDown"
+        android:layout_width="205dp"
+        android:layout_height="65dp"
+        android:onClick="CoundDown"
+        android:text="@string/countdown"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonComptar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

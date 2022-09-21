@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Exercici4MarSan</string>
+    <string name="my_mann">My mann</string>
+    <string name="Comptartxt">0</string>
+    <string name="toastButtontxt">Toast</string>
+    <string name="comptarbuttontxt">Comptar</string>
+    <string name="countdown">CountDown</string>
+</resources>
